@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color) ;
+}
+
+
+:root {
+    --bg-color:#191919;
+    --secont-bg-color:#101010;
+    --main-color:#e4e4e4;
+    --text-color:#fff;
+    --other-color:#c6c9d8bf;
+
+    --h1-font :7rem;
+    --h2-font :3.5rem;
+    --p-font :1.1rem;
+
+}
+
+header {
+    position: left;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    padding: 28px 11%;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+.work2 {
+    color: #e75f77;
+}
+.work3 {
+    color: #fffbfc;
+}
+.navlist {
+    display: flex;
+}
+.navlist a{
+    color: var(--secont-color);
+    font-size: var(--p-font);
+    font-family: 600;
+    margin: 0 40px;
+    transition: all ease .40s;
+}
+.navlist a:hover {
+    color: #e75f77;
+    
+}
+#menu-icon {
+    font-size: 42px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+section {
+    padding: 120px 19% 100px;
+}
+.home {
+    position: relative;
+    min-width: 100vh;
+    width: 100%;
+    background: url(img/background-adare-restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero-text h1 {
+    font-family:'Work Sans', sans-serif ;
+    font-size: 66px;
+    color: var(--text-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-text h4{
+    color: var(--secont-color);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    margin-bottom: 3.5rem;
+}
+.btn{
+    display: inline-block;
+    padding: 16px 45px;
+    background: #e75f77;
+    font-size: var(--text-color);
+    font-weight: 600;
+    border: 2px solid var(--secont-color);
+    color: #e9dcdc;
+    margin-top: 14px;
+}
+.btn:hover{
+    transform: translateX(5px);
+    background: transparent;
+}
+header .sticky{
+    padding: 15px 11%;
+    background: #000 ;
+    border-bottom: 1px solid #4e5055;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+.about-img img{
+    width: 80%;
+    height: auto;
+}
+.about-text h2 {
+    font-family:'Work Sans', sans-serif ;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.about-text h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+span {
+    color: #e75f75;
+}
+.about-text p {
+    color: #fff;
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 3em;
+}
+.Service{
+    background: var(--secont-color);
+}
+.text-center h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.text-center h4 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+.Service-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.Service-box {
+    padding: 45px 30px;
+    background: rgb(47 43 43 / 41%);
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all ease .50s;
+    
+}
+.Service-box:hover{
+    transform: translateY(-8px);
+    border: 1px #e75f77;
+}
+.s-btnn {
+    display: inline-block;
+    padding: 9px 24px;
+    color: #e75f75;
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid var(--main-color);
+    border-radius: 2rem;
+    transition: all ease .50s;
+    margin-top: 6px;
+}
+.s-btnn:hover {
+    transform: scale(1.1);
+    background: transparent;
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 5rem;
+}
+.left-contact {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}
+.in i{
+    color: var(--main-color);
+    opacity: 0.5;
+    font-size: 120px;
+    margin-bottom: 15px;
+    transition: all ease .40s;
+}
+.right-contcat h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.right-contact a{
+    display: inline-block;
+    color: #e75f77;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-bottom: 2px solid (var(--main-color));
+    padding: 3px 0;
+    transition: all ease .40s;
+    
+}
+.right-contcat a:hover{
+    transform: translateY(-5px);
+}
+
+.end-section{
+    padding: 80px 19% 70px;
+    background: var(--secont-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.scroll-bttn i{
+    position: fixed;
+    right: 2.2rem;
+    bottom: 2.2rem;
+    color: var(--text-color);
+    background: var(--main-color);
+    font-size:  23px;
+    padding: 9px;
+}
+.end-section h3 {
+    font-size:20px ;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.end-section p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+@media (max-width:1200px){
+    .home{
+        min-height: 90vh;
+    }
+
+    .navlist a{
+        margin: 0 20px;
+    }
+    :root{
+        --h1-font:5rem;
+        --h2-font:3.1rem;
+         --p-font:1rem;
+    }
+}
+@media (max-width:1060px) {
+    .about{
+        grid-template-columns: 1fr; 
+    }
+    .about-img{
+        text-align: center;
+        order: 2;
+    }
+    .about-img img{
+        max-height: 100%;
+        width: 600px;
+        height: auto;
+    }
+    .Service-item{
+        grid-template-columns: repeat(left, minmax(350px, auto));
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .left-contact{
+        margin: auto;
+    }
+}
+
+
